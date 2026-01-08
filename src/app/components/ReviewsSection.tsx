@@ -1,5 +1,12 @@
 "use client";
 
+/*
+Component: ReviewsSection.tsx
+Purpose: Render a set of student reviews/testimonials as cards.
+Client: yes
+Notes: Contains local `reviews` array; consider fetching from an API for production.
+*/
+
 const reviews = [
   {
     name: "Nguyễn Văn A",

@@ -1,5 +1,12 @@
 "use client";
 
+/*
+Component: ReviewsSection2.tsx
+Purpose: Alternate reviews layout (two-column feed) or events showcase.
+Client: yes
+Notes: Use when you want a different layout for testimonials or event items.
+*/
+
 const reviews = Array.from({ length: 8 }).map((_, i) => ({
   name: `Nguyễn Văn ${String.fromCharCode(65 + i)}`,
   content:

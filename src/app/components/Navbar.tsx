@@ -1,5 +1,12 @@
 "use client";
 
+/*
+Component: Navbar.tsx
+Purpose: Main site header and navigation. Renders desktop and mobile menus.
+Client: yes (uses React state and hooks)
+Notes: Keep interactions here; import into `layout.tsx`.
+*/
+
 import React, { useState } from "react";
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";

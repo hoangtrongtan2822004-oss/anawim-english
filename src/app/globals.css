@@ -1,3 +1,7 @@
+/*
+Global styles: `globals.css`
+Purpose: Tailwind import and global CSS variables. Adjust base styles here.
+*/
 @import "tailwindcss";
 
 :root {

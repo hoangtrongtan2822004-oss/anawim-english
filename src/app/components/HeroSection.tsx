@@ -1,5 +1,12 @@
 "use client";
 
+/*
+Component: HeroSection.tsx
+Purpose: Top-of-page hero content (title, summary, CTAs).
+Client: yes when interactive; currently client for consistency.
+Notes: Keep large visuals here minimal to avoid heavy bundle size.
+*/
+
 export default function HeroSection() {
   return (
     <section className="bg-white font-sans border-b border-gray-200">

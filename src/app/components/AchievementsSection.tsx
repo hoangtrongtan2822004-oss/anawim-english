@@ -1,5 +1,12 @@
 "use client";
 
+/*
+Component: AchievementsSection.tsx
+Purpose: Showcase student achievements and awards.
+Client: yes (keeps layout consistent with other sections)
+Notes: Data lives in the local `students` array; extract to `data/` for dynamic content.
+*/
+
 const students = [
   { name: "Nguyễn Văn A", award: "Tên trường" },
   { name: "Nguyễn Văn B", award: "Tên trường" },

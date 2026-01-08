@@ -1,5 +1,21 @@
 "use client";
 
+/*
+Component: ValuesSection.tsx
+Purpose: Display core values and unique selling points of Anawim.
+Client: yes
+Notes: Keep content concise; consider moving long copy to `data/`.
+*/
+
+"use client";
+
+/*
+Component: ValuesSection.tsx
+Purpose: Display core values and unique selling points of Anawim.
+Client: yes
+Notes: Keep content concise; consider moving long copy to `data/`.
+*/
+
 export default function ValuesSection() {
   return (
     <section className="bg-white font-sans border-b border-gray-200">

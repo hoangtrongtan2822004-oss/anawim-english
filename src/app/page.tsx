@@ -1,3 +1,8 @@
+/*
+Page: `page.tsx` (home)
+Purpose: Compose the homepage by importing and arranging section components.
+Notes: Keep this file minimal; move UI into components for clarity.
+*/
 import HeroSection from "./components/HeroSection";
 import ProgramsSection from "./components/ProgramsSection";
 import AchievementsSection from "./components/AchievementsSection";

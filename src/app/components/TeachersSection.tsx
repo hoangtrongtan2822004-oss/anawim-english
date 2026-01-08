@@ -1,5 +1,12 @@
 "use client";
 
+/*
+Component: TeachersSection.tsx
+Purpose: Grid/listing of teachers with brief summary and CTA to view all teachers.
+Client: yes
+Notes: Teacher data is currently local; consider fetching from a CMS or API.
+*/
+
 const teachers = [
   { name: "Nguyễn Văn A", role: "Chức vụ" },
   { name: "Nguyễn Văn B", role: "Chức vụ" },

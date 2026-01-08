@@ -1,5 +1,12 @@
 "use client";
 
+/*
+Component: LocationsSection.tsx
+Purpose: Grid of Anawim branches with addresses and CTA.
+Client: yes
+Notes: Consider extracting addresses to `data/` for maintainability.
+*/
+
 const locations = [
   { name: "Tên cơ sở" },
   { name: "Tên cơ sở" },

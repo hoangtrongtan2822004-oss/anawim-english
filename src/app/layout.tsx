@@ -1,3 +1,8 @@
+/*
+Root layout: `layout.tsx`
+Purpose: App root layout for Next.js App Router. Wraps all pages, loads global fonts and the `Navbar`.
+Notes: This is a server component by default. Keep client-only code out of this file.
+*/
 import type { Metadata } from "next";
 import { Inter } from "next/font/google"; // Import font Inter
 import "./globals.css";

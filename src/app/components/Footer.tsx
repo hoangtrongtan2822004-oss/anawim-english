@@ -1,4 +1,10 @@
 "use client";
+/*
+Component: Footer.tsx
+Purpose: Site footer with branch lists, course links and contact info.
+Client: yes (can contain small interactive elements)
+Notes: Social icons link to external profiles.
+*/
 import { Facebook, Youtube, Music } from "lucide-react"; // lucide-react chưa có icon Tiktok, dùng tạm Music
 
 export default function Footer() {

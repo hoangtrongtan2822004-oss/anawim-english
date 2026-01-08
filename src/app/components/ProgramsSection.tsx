@@ -1,5 +1,12 @@
 "use client";
 
+/*
+Component: ProgramsSection.tsx
+Purpose: List of learning programs with icons and optional badges.
+Client: yes (if you add interactive filters or CTAs)
+Notes: Icons are imported from `programIcons.ts`.
+*/
+
 import { programIcons } from "./programIcons";
 
 const programs = [
