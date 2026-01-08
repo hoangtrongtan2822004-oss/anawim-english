@@ -1,10 +1,12 @@
 "use client";
-
 /*
 Component: AchievementsSection.tsx
-Purpose: Showcase student achievements and awards.
-Client: yes (keeps layout consistent with other sections)
-Notes: Data lives in the local `students` array; extract to `data/` for dynamic content.
+Mục đích: Hiển thị bảng vàng thành tích học viên/khách hàng.
+Props: Không nhận props (sử dụng mảng `students` nội bộ). Có thể thay bằng props `students`.
+Ví dụ sử dụng:
+  import AchievementsSection from './components/AchievementsSection';
+  <AchievementsSection />
+Gợi ý: Nếu số liệu động, chuyển logic lấy dữ liệu sang `data/` hoặc API.
 */
 
 const students = [

@@ -1,8 +1,10 @@
-/*
-Page: `page.tsx` (home)
-Purpose: Compose the homepage by importing and arranging section components.
-Notes: Keep this file minimal; move UI into components for clarity.
-*/
+/**
+ * File: page.tsx
+ * Mục đích: Trang chủ (route `/`) - gom các section lại để hiển thị homepage.
+ * Props: Không nhận props.
+ * Ví dụ sử dụng: Next.js tự map file này vào route `/`.
+ * Lưu ý: Giữ file này gọn, đặt UI chi tiết trong `src/app/components/`.
+ */
 import HeroSection from "./components/HeroSection";
 import ProgramsSection from "./components/ProgramsSection";
 import AchievementsSection from "./components/AchievementsSection";

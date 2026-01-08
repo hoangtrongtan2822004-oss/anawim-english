@@ -1,10 +1,12 @@
 "use client";
-
 /*
 Component: LocationsSection.tsx
-Purpose: Grid of Anawim branches with addresses and CTA.
-Client: yes
-Notes: Consider extracting addresses to `data/` for maintainability.
+Mục đích: Hiển thị lưới các cơ sở/chi nhánh của Anawim kèm địa chỉ.
+Props: Hiện không nhận props; có thể đổi thành `locations` prop hoặc fetch từ `data/`.
+Ví dụ sử dụng:
+  import LocationsSection from './components/LocationsSection';
+  <LocationsSection />
+Gợi ý: Nếu danh sách dài, phân trang hoặc lazy-load để tối ưu hiệu năng.
 */
 
 const locations = [

@@ -5,6 +5,16 @@ Component: SignupSection.tsx
 Purpose: Contact / signup area with Messenger, Hotline and Address CTAs.
 Client: yes (uses icons and interactions)
 Notes: The icons come from `lucide-react` and text is local; consider making CTAs dynamic.
+"use client";
+
+/*
+Component: SignupSection.tsx
+Mục đích: Khu vực liên hệ / đăng ký (Messenger, Hotline, Địa chỉ) và ảnh minh họa.
+Props: Không nhận props; nếu cần, có thể thêm callbacks cho CTA.
+Ví dụ sử dụng:
+  import SignupSection from './components/SignupSection';
+  <SignupSection />
+Gợi ý: Nếu muốn tracking, thêm onClick handler cho các nút và gửi analytics.
 */
 
 import { MessageCircle, Phone, MapPin } from "lucide-react";

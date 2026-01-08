@@ -2,9 +2,12 @@
 
 /*
 Component: ReviewsSection.tsx
-Purpose: Render a set of student reviews/testimonials as cards.
-Client: yes
-Notes: Contains local `reviews` array; consider fetching from an API for production.
+Mục đích: Hiển thị các phản hồi/đánh giá của học viên dưới dạng card.
+Props: Không nhận props; hiện dùng mảng `reviews` nội bộ. Có thể chấp nhận prop `reviews: Review[]` hoặc fetch từ API.
+Ví dụ sử dụng:
+  import ReviewsSection from './components/ReviewsSection';
+  <ReviewsSection />
+Ghi chú: Thêm tính năng load-more hoặc pagination nếu số lượng nhiều.
 */
 
 const reviews = [

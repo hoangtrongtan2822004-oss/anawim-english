@@ -1,6 +1,9 @@
 /*
-Global styles: `globals.css`
-Purpose: Tailwind import and global CSS variables. Adjust base styles here.
+  File: globals.css
+  Mục đích: Nhập Tailwind và định nghĩa biến CSS toàn cục, styles căn bản.
+  Hướng dẫn nhanh:
+  - Đặt biến font, màu theme ở đây (ví dụ biến --font-inter từ Next font).
+  - Tránh đặt styles component-specific; ưu tiên Tailwind utility classes.
 */
 @import "tailwindcss";
 

@@ -3,6 +3,17 @@ Root layout: `layout.tsx`
 Purpose: App root layout for Next.js App Router. Wraps all pages, loads global fonts and the `Navbar`.
 Notes: This is a server component by default. Keep client-only code out of this file.
 */
+/**
+ * Component: layout.tsx
+ * Mục đích: Layout gốc cho Next.js App Router, đóng vai trò bao quanh mọi trang.
+ * Props: { children: React.ReactNode }
+ * Ví dụ sử dụng:
+ *   import RootLayout from './layout';
+ *   <RootLayout>{children}</RootLayout>
+ * Lưu ý:
+ * - Đây là server component theo mặc định; không đưa logic browser-only vào đây.
+ * - Font Inter được nạp và gán vào biến CSS để dùng toàn cục.
+ */
 import type { Metadata } from "next";
 import { Inter } from "next/font/google"; // Import font Inter
 import "./globals.css";

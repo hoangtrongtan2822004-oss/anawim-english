@@ -2,9 +2,12 @@
 
 /*
 Component: TeachersSection.tsx
-Purpose: Grid/listing of teachers with brief summary and CTA to view all teachers.
-Client: yes
-Notes: Teacher data is currently local; consider fetching from a CMS or API.
+Mục đích: Hiển thị danh sách/luới giáo viên, kèm mô tả ngắn và CTA xem tất cả.
+Props: Không nhận props; có thể chuyển sang nhận `teachers: Teacher[]` để linh hoạt.
+Ví dụ sử dụng:
+  import TeachersSection from './components/TeachersSection';
+  <TeachersSection />
+Gợi ý: Dữ liệu giáo viên nên được lưu trong `data/` hoặc lấy từ API cho production.
 */
 
 const teachers = [

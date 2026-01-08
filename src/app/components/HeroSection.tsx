@@ -2,9 +2,12 @@
 
 /*
 Component: HeroSection.tsx
-Purpose: Top-of-page hero content (title, summary, CTAs).
-Client: yes when interactive; currently client for consistency.
-Notes: Keep large visuals here minimal to avoid heavy bundle size.
+Mục đích: Hiển thị phần hero ở đầu trang gồm tiêu đề lớn, mô tả ngắn và CTA.
+Props: Không nhận props (hiện tại). Nếu cần truyền dữ liệu, thêm interface `HeroProps`.
+Ví dụ sử dụng:
+  import HeroSection from './components/HeroSection';
+  <HeroSection />
+Client: có (nếu bạn thêm tương tác hoặc slider). Giữ tối giản để không ảnh hưởng bundle.
 */
 
 export default function HeroSection() {

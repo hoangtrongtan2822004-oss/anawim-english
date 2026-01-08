@@ -1,10 +1,13 @@
 "use client";
-
 /*
 Component: ProgramsSection.tsx
-Purpose: List of learning programs with icons and optional badges.
-Client: yes (if you add interactive filters or CTAs)
-Notes: Icons are imported from `programIcons.ts`.
+Mục đích: Hiển thị danh sách các chương trình học dạng nút/khối có icon.
+Props: Không nhận props; danh sách `programs` nội bộ có thể được chuyển thành prop hoặc lấy từ `data/`.
+Ví dụ sử dụng:
+  import ProgramsSection from './components/ProgramsSection';
+  <ProgramsSection />
+Client: có nếu thêm tương tác (filter, chọn chương trình).
+Ghi chú: Icon được map theo chỉ số bằng `programIcons`.
 */
 
 import { programIcons } from "./programIcons";

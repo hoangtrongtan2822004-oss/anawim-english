@@ -2,9 +2,12 @@
 
 /*
 Component: ReviewsSection2.tsx
-Purpose: Alternate reviews layout (two-column feed) or events showcase.
-Client: yes
-Notes: Use when you want a different layout for testimonials or event items.
+Mục đích: Bản sao khác của phần reviews, hiển thị dạng feed 2 cột (phù hợp với sự kiện hoặc bài viết ngắn).
+Props: Không nhận props; hiện dùng mảng `reviews` giả lập. Có thể thay bằng prop `items`.
+Ví dụ sử dụng:
+  import ReviewsSection2 from './components/ReviewsSection2';
+  <ReviewsSection2 />
+Gợi ý: Dùng khi cần layout khác với `ReviewsSection` để phân loại nội dung.
 */
 
 const reviews = Array.from({ length: 8 }).map((_, i) => ({

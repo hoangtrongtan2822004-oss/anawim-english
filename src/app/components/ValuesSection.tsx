@@ -11,9 +11,12 @@ Notes: Keep content concise; consider moving long copy to `data/`.
 
 /*
 Component: ValuesSection.tsx
-Purpose: Display core values and unique selling points of Anawim.
-Client: yes
-Notes: Keep content concise; consider moving long copy to `data/`.
+Mục đích: Trình bày các giá trị cốt lõi và điểm khác biệt của Anawim.
+Props: Không nhận props. Nội dung hiện tại là tĩnh; có thể chuyển sang lấy từ `data/`.
+Ví dụ sử dụng:
+  import ValuesSection from './components/ValuesSection';
+  <ValuesSection />
+Gợi ý: Tách nội dung dài ra file `data/` để dễ quản lý và dịch.
 */
 
 export default function ValuesSection() {

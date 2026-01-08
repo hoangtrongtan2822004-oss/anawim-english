@@ -2,11 +2,14 @@
 
 /*
 Component: Navbar.tsx
-Purpose: Main site header and navigation. Renders desktop and mobile menus.
-Client: yes (uses React state and hooks)
-Notes: Keep interactions here; import into `layout.tsx`.
+Mục đích: Header chính của site, chứa navigation cho desktop và mobile.
+Props: Không nhận props.
+Ví dụ sử dụng:
+  import Navbar from './components/Navbar';
+  <Navbar />
+Client: có (sử dụng state để mở/đóng menu trên mobile).
+Lưu ý: Nếu muốn thêm CTA (Inbox), có thể thêm button ở phần desktop.
 */
-
 import React, { useState } from "react";
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";

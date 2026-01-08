@@ -1,9 +1,12 @@
 "use client";
 /*
 Component: Footer.tsx
-Purpose: Site footer with branch lists, course links and contact info.
-Client: yes (can contain small interactive elements)
-Notes: Social icons link to external profiles.
+Mục đích: Chân trang chứa danh sách cơ sở, link khóa học, thông tin liên hệ và icon mạng xã hội.
+Props: Không nhận props.
+Ví dụ sử dụng:
+  import Footer from './components/Footer';
+  <Footer />
+Lưu ý: Liên kết xã hội mở ở tab mới (`target="_blank"`). Hiện đang dùng `Music` tạm cho TikTok vì thư viện icon chưa có symbol chính thức.
 */
 import { Facebook, Youtube, Music } from "lucide-react"; // lucide-react chưa có icon Tiktok, dùng tạm Music
 
