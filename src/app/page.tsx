@@ -19,6 +19,8 @@ import Footer from "./components/Footer";
 export default function HomePage() {
   return (
     <div className="bg-[#f5f5f5] font-sans">
+      {/* Page sections: keep the page file as a simple composition of components.
+          Each component is responsible for its own markup and styling. */}
       <HeroSection />
       <ProgramsSection />
       <AchievementsSection />

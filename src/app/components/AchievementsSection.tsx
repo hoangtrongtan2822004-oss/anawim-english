@@ -33,13 +33,21 @@ export default function AchievementsSection() {
             kết quả trên 8.0 IELTS
           </div>
         </div>
+        {/* Grid of student achievements:
+            - Responsive columns adapt from 2 → 3 → 4
++           - Each cell shows a photo placeholder, name and award/school
+            - Replace placeholders with real images and provide `alt` text
+        */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {students.map((s, idx) => (
             <div key={idx} className="flex flex-col items-center">
+              {/* Photo placeholder */}
               <div className="w-full aspect-4/3 bg-gray-200 rounded-lg mb-3" />
+              {/* Student name */}
               <div className="text-base font-semibold text-gray-800 text-center">
                 {s.name}
               </div>
+              {/* Award / affiliation */}
               <div className="text-sm text-gray-500 text-center">{s.award}</div>
             </div>
           ))}

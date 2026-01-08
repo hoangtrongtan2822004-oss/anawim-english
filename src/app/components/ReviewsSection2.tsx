@@ -33,6 +33,11 @@ export default function ReviewsSection2() {
             </div>
           </div>
         </div>
+        {/* Two-column feed layout:
+            - reviews array is split into two columns by slicing the array into chunks of 4
+            - each item shows a thumbnail + excerpt
+            - use more robust chunking if list length changes
+        */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {[0, 1].map((col) => (
             <div key={col} className="flex flex-col gap-6">
@@ -41,9 +46,11 @@ export default function ReviewsSection2() {
                   key={idx}
                   className="flex items-center gap-4 bg-white rounded-lg p-4 shadow-sm"
                 >
+                  {/* Thumbnail placeholder */}
                   <div className="w-20 h-20 bg-gray-300 rounded-md flex items-center justify-center font-bold text-lg text-gray-500">
                     Ảnh
                   </div>
+                  {/* Excerpt */}
                   <div className="flex-1">
                     <div className="text-base text-black font-medium mb-1 line-clamp-2">
                       {r.content}

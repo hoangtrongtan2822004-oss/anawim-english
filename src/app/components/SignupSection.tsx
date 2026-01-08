@@ -2,13 +2,6 @@
 
 /*
 Component: SignupSection.tsx
-Purpose: Contact / signup area with Messenger, Hotline and Address CTAs.
-Client: yes (uses icons and interactions)
-Notes: The icons come from `lucide-react` and text is local; consider making CTAs dynamic.
-"use client";
-
-/*
-Component: SignupSection.tsx
 Mục đích: Khu vực liên hệ / đăng ký (Messenger, Hotline, Địa chỉ) và ảnh minh họa.
 Props: Không nhận props; nếu cần, có thể thêm callbacks cho CTA.
 Ví dụ sử dụng:
@@ -23,6 +16,11 @@ export default function SignupSection() {
   return (
     <section className="bg-white font-sans border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row gap-10 items-center">
+        {/*
+          Contact block (left column):
+          - Messenger / Hotline / Address entries each include an icon and descriptive text.
+          - These are currently static; replace the inner text with interactive Links or onClick handlers for real actions.
+        */}
         {/* Center: Icon + Text info Messenger/Hotline/Address */}
         <div className="w-full md:w-1/2 flex flex-col gap-6">
           {/* Messenger */}
@@ -30,6 +28,7 @@ export default function SignupSection() {
             <div className="shrink-0 flex items-center justify-center w-12 h-12 bg-white rounded-xl shadow mt-1">
               <MessageCircle className="w-7 h-7 text-black" />
             </div>
+            {/* Text block for Messenger: title + description. Consider replacing with <a> linking to page. */}
             <div className="flex flex-col gap-1">
               <div
                 style={{
@@ -62,6 +61,7 @@ export default function SignupSection() {
             <div className="shrink-0 flex items-center justify-center w-12 h-12 bg-white rounded-xl shadow mt-1">
               <Phone className="w-7 h-7 text-black" />
             </div>
+            {/* Hotline text block: display phone number and call-to-action */}
             <div className="flex flex-col gap-1">
               <div
                 style={{
@@ -94,6 +94,7 @@ export default function SignupSection() {
             <div className="shrink-0 flex items-center justify-center w-12 h-12 bg-white rounded-xl shadow mt-1">
               <MapPin className="w-7 h-7 text-black" />
             </div>
+            {/* Address text block: consider linking to map or locations page */}
             <div className="flex flex-col gap-1">
               <div
                 style={{

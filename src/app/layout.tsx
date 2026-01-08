@@ -39,7 +39,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
-      {/* Thêm inter.variable vào className của body */}
+      {/*
+        Body: apply Inter font variable and global antialiasing.
+        - `Navbar` is a client component and is placed at the top.
+        - `main` contains page-specific content (server components can be nested inside).
+        - `FloatingPopups` is a client component rendered site-wide for quick actions.
+      */}
       <body className={`${inter.variable} antialiased`}>
         <Navbar />
         <main className="min-h-screen flex flex-col">{children}</main>

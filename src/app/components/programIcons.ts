@@ -17,6 +17,8 @@ import {
   Heart,
 } from "lucide-react";
 
+// Export a stable array of icon components used by `ProgramsSection`.
+// Keep ordering in sync with the programs list in `ProgramsSection.tsx` or map by key.
 export const programIcons = [
   BookOpen,
   GraduationCap,

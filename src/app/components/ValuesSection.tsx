@@ -2,15 +2,6 @@
 
 /*
 Component: ValuesSection.tsx
-Purpose: Display core values and unique selling points of Anawim.
-Client: yes
-Notes: Keep content concise; consider moving long copy to `data/`.
-*/
-
-"use client";
-
-/*
-Component: ValuesSection.tsx
 Mục đích: Trình bày các giá trị cốt lõi và điểm khác biệt của Anawim.
 Props: Không nhận props. Nội dung hiện tại là tĩnh; có thể chuyển sang lấy từ `data/`.
 Ví dụ sử dụng:

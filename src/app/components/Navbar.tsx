@@ -82,6 +82,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="shrink-0 flex items-center">
+            {/* Logo: dẫn trở về homepage. Giữ đơn giản để dễ thay bằng Image/NextImage nếu cần tối ưu. */}
             <Link
               href="/"
               className="text-3xl font-serif font-bold text-blue-900 italic"
@@ -91,6 +92,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
+          {/* Desktop Menu: hiển thị ở breakpoint `xl` trở lên. Các item có submenu sẽ dùng CSS `group-hover` để show dropdown. */}
           <div className="hidden xl:flex space-x-4 items-center">
             {menuItems.map((item, index) => (
               <div
@@ -109,6 +111,13 @@ export default function Navbar() {
                     </button>
 
                     {/* Dropdown Content */}
+                    {/*
+                      Dropdown behavior:
+                      - Position absolute under the parent item (`top-full left-0`).
+                      - Uses utility classes to handle show/hide via `group-hover` (opacity/visibility/transform).
+                      - Each submenu link is keyboard-focusable via the native Link component.
+                      Note: For full accessibility, consider adding aria-expanded and keyboard handlers.
+                    */}
                     <div className="absolute top-full left-0 w-56 bg-white shadow-xl rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border-t-2 border-blue-600">
                       <div className="py-2">
                         {item.submenu.map((subItem, subIndex) => (
@@ -137,11 +146,13 @@ export default function Navbar() {
           </div>
 
           {/* Inbox Button */}
+          {/* Desktop CTA: Inbox button (hiển thị ở desktop). Có thể thay bằng Link hoặc trigger modal/chat. */}
           <button className="hidden xl:block px-6 py-2 bg-red-600 hover:bg-red-700 text-white font-medium text-sm rounded-lg transition-colors">
             Inbox Anawim
           </button>
 
           {/* Mobile Menu Button */}
+          {/* Mobile Menu Button: hiển thị ở breakpoint nhỏ, toggle state để show mobile menu */}
           <div className="xl:hidden flex items-center">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -154,6 +165,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu Content (Đơn giản hóa cho mobile) */}
+      {/* Mobile Menu Content: Render khi `isMobileMenuOpen` true. Đây là phiên bản đơn giản, có thể mở rộng thành accordion cho submenus lớn. */}
       {isMobileMenuOpen && (
         <div className="xl:hidden bg-white border-t">
           <div className="px-2 pt-2 pb-3 space-y-1">
@@ -162,10 +174,12 @@ export default function Navbar() {
                 key={index}
                 className="border-b border-gray-100 last:border-0"
               >
+                {/* Menu label for mobile (tap targets should be large) */}
                 <div className="px-3 py-3 font-medium text-gray-800">
                   {item.label}
                 </div>
                 {item.submenu && (
+                  // Submenu: currently always expanded in mobile view; replace with collapsible if needed
                   <div className="pl-6 pb-2 space-y-2">
                     {item.submenu.map((subItem, subIdx) => (
                       <Link

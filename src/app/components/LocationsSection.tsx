@@ -33,10 +33,16 @@ export default function LocationsSection() {
             HN và ĐN
           </div>
         </div>
+        {/* Location grid:
+            - Each card represents a branch with an image and name.
+            - For production, include address, phone and a link to map directions.
+        */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {locations.map((loc, idx) => (
             <div key={idx} className="flex flex-col items-center">
+              {/* Branch photo placeholder */}
               <div className="w-full aspect-4/3 bg-gray-200 rounded-lg mb-3" />
+              {/* Branch name */}
               <div className="text-base font-semibold text-gray-800 text-center">
                 {loc.name}
               </div>

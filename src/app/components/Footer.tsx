@@ -15,8 +15,9 @@ export default function Footer() {
     <footer className="bg-gray-200 font-sans border-t border-gray-300 mt-0 text-black w-full">
       <div className="w-full px-0 sm:px-8 lg:px-20 py-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-12">
-          {/* Cơ sở TPHCM */}
+          {/* Cột 1: Danh sách cơ sở + thông tin liên hệ */}
           <div>
+            {/* Header for HCM locations; keep copy updated with real counts */}
             <div className="font-semibold mb-2 border-b border-black pb-1">
               CƠ SỞ TẠI TPHCM (11)
             </div>
@@ -56,6 +57,7 @@ export default function Footer() {
             <div className="text-sm mb-1">
               Hotline: <span className="font-semibold">1800 96 96 39</span>
             </div>
+            {/* Social follow section */}
             <div className="font-semibold mt-3 mb-1">Theo dõi Anawim tại</div>
             <div className="flex gap-2">
               <a
@@ -74,7 +76,7 @@ export default function Footer() {
                 aria-label="TikTok"
                 className="w-7 h-7 bg-white rounded-full flex items-center justify-center text-black border border-gray-400 hover:bg-gray-100 transition"
               >
-                {/* lucide-react chưa có icon Tiktok, dùng tạm icon Music */}
+                {/* Placeholder for TikTok icon: replace with official SVG when available */}
                 <Music className="w-5 h-5" />
               </a>
               <a
@@ -88,7 +90,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          {/* Khóa học IELTS */}
+          {/* Cột 2: Khóa học IELTS - danh sách liên kết (hiện là text tĩnh) */}
           <div>
             <div className="font-semibold mb-2 border-b border-black pb-1">
               KHÓA HỌC IELTS
@@ -106,7 +108,7 @@ export default function Footer() {
             <div className="text-sm">IELTS Writing & Speaking</div>
             <div className="text-sm">IELTS Online</div>
           </div>
-          {/* Khóa học khác */}
+          {/* Cột 3: Khóa học khác + phần 'VỀ ANAWIM' */}
           <div>
             <div className="font-semibold mb-2 border-b border-black pb-1">
               KHÓA HỌC KHÁC
@@ -127,11 +129,12 @@ export default function Footer() {
             <div className="text-sm">Tự học IELTS</div>
             <div className="text-sm">Nền tảng công nghệ</div>
           </div>
-          {/* Cột trống để căn đều */}
+          {/* Cột 4: cột trống để cân layout trên desktop; dùng responsive grid */}
           <div />
         </div>
         {/* Bottom bar */}
         <div className="border-t border-gray-400 pt-4 mt-8 flex flex-col gap-2 text-xs text-black">
+          {/* Bottom bar: copyright and quick links. Keep legal copy up-to-date. */}
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
             <div>© 2026 Anawim English. All rights reserved.</div>
             <div className="flex gap-2 md:gap-4">

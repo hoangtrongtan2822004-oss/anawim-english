@@ -30,16 +30,25 @@ export default function ProgramsSection() {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
           {programs.map((program, idx) => {
+            // Select icon by index; use modulo to avoid out-of-range
             const Icon = programIcons[idx % programIcons.length];
             return (
               <div key={idx} className="relative">
+                {/*
+                  Program button:
+                  - Full-width rounded pill with icon + name.
+                  - minHeight ensures consistent vertical rhythm.
+                  - Consider converting to Link when routing to program details.
+                */}
                 <button
                   className="flex items-center gap-3 rounded-full bg-gray-100 hover:bg-blue-100 text-gray-800 text-lg font-medium px-8 py-5 shadow transition-colors duration-200 w-full"
                   style={{ minHeight: 72 }}
                 >
+                  {/* Icon component (lucide-react) */}
                   <Icon className="w-6 h-6 text-blue-500 shrink-0" />
                   <span>{program.name}</span>
                 </button>
+                {/* 'Mới' badge for new programs; absolutely positioned */}
                 {program.isNew && (
                   <div className="absolute -top-3 -right-3 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                     Mới

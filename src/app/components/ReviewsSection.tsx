@@ -62,11 +62,17 @@ export default function ReviewsSection() {
               key={idx}
               className="bg-gray-50 rounded-lg p-6 shadow-sm flex flex-col h-full"
             >
+              {/*
+                Header: avatar + name + date
+                - Avatar: placeholder circular block; replace with image + alt text
+                - Date: currently static; consider storing a `date` field per review
+              */}
               <div className="flex items-center gap-2 mb-2">
                 {/* Placeholder avatar */}
                 <div className="w-10 h-10 bg-gray-200 rounded-full" />
                 <div className="font-semibold text-gray-800 text-base">
                   {r.name}
+                  {/* Review date */}
                   <div
                     style={{
                       color: "#000",
@@ -82,7 +88,11 @@ export default function ReviewsSection() {
                   </div>
                 </div>
               </div>
+
+              {/* Main review content: body text */}
               <div className="text-gray-700 text-base flex-1">{r.content}</div>
+
+              {/* Actions: view detail link, share, etc. */}
               <div className="flex items-center gap-1 mt-4">
                 <a
                   href="#"
