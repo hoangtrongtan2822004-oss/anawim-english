@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "lucide-react": "^0.562.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "scripts": {
+    "dev": "nodemon --exec \"npm run dev --prefix src\"",
+    "build": "npm run build --prefix src",
+    "start": "npm run start --prefix src",
+    "lint": "npm run lint --prefix src"
+  }
+}
