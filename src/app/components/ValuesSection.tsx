@@ -69,9 +69,12 @@ export default function ValuesSection() {
                 <br />
                 và đột phá
               </div>
-              <div className="text-gray-800 text-base mb-1">
+              <a
+                href="#features"
+                className="text-blue-700 text-sm font-medium mt-2 inline-block mb-1"
+              >
                 Xem chi tiết tính năng
-              </div>
+              </a>
               <ul className="text-gray-800 text-base flex flex-col gap-2 pl-0">
                 <li className="flex items-center gap-2">
                   <span className="text-green-600 text-lg">✔</span>

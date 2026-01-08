@@ -18,6 +18,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google"; // Import font Inter
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import FloatingPopups from "./components/FloatingPopups";
 
 // Cấu hình font Inter với biến CSS --font-inter
 const inter = Inter({
@@ -42,6 +43,8 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased`}>
         <Navbar />
         <main className="min-h-screen flex flex-col">{children}</main>
+        {/* Floating popups fixed on the right side */}
+        <FloatingPopups />
       </body>
     </html>
   );
